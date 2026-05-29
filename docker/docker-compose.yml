@@ -25,6 +25,8 @@ services:
       timeout: 10s
       interval: 5s
       retries: 3
+    ports:
+      - "3000:3000"
     depends_on:
       analytics:
         condition: service_healthy
